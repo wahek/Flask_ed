@@ -1,0 +1,12 @@
+<table>
+    {% for student in students %}
+    <tr>
+        <td>
+            {{ student.firstname }}
+            {{ student.lastname }}
+            {{ student.age }}
+            {{ student.score }}
+        </td>
+    </tr>
+    {% endfor %}
+</table>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+            e-com
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <section>
+        <header>
+            <img src="{{ img_header }}" alt="">
+        </header>
+        <main>
+            {% block prod_name %}
+                    Название
+            {% endblock %}
+            {% block prod_img %}
+                    Фото
+            {% endblock %}
+            {% block prod_discr %}
+                    Описание
+            {% endblock %}
+            <img src="{{ img_main }}" alt="">
+        </main>
+        <footer>
+            <img src="{{ img_footer }}" alt="">
+        </footer>
+    </section>
+</body>
+</html>
